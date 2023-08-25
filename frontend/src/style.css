@@ -1,0 +1,30 @@
+.bg-primary {
+    background-color: #1F0061;
+}
+
+
+.font-sora {
+    font-family: 'Sora';
+}
+
+.font-pop {
+    font-family: "poppins";
+}
+
+.bg-gradient {
+    background: linear-gradient(102.45deg, #1F0061 -6.69%, rgba(36, 0, 112, 0.61) 126.54%);
+
+}
+
+.circ1 {
+    fill: rgba(129, 123, 123, 0.42);
+    opacity: 0.79;
+    backdrop-filter: blur(25px);
+    right: 100%;
+}
+
+.grad-border {
+
+    background: linear-gradient(black, black) padding-box, linear-gradient(to right, darkblue, #497fe2) border-box;
+    border: 4px solid transparent;
+}
