@@ -9,13 +9,13 @@ export const Dashboard = () => {
             <div className='h-[700px] font-sora flex justify-center items-center'>
                 <div className='flex flex-col space-y-9'>
                     <div className='w-[500px] mx-auto'>
-                        <img src="./images/shh.png" alt="" />
+                        <img src="./images/shh.png" alt="" className="h-1/2 w-1/2 sm:w-full mx-auto" />
                     </div>
-                    <p className='text-5xl text-white mx-auto '>
+                    <p className='md:text-5xl text-2xl text-white mx-auto '>
                         Shh! Data Ahead!
                     </p>
                     <button className='bg-white rounded-xl w-1/2 mx-auto p-4'>
-                        <Link to="/profile">Unleash your Organization Now!</Link>
+                        <Link to="/dashboard/sentiment-analysis">Unleash your Now!</Link>
                     </button>
                 </div>
             </div>
