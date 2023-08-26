@@ -1,35 +1,18 @@
 import React from 'react'
-import "../style.css"
+import Sidebar from '../components/Sidebar'
 import { AiOutlineArrowDown } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
-export const Home = () => {
+
+const Service = () => {
     return (
-        <div className='bg-gradient z-[-10] '>
-            {/* HERO SECTION */}
-            <div className='h-[100%] text-white font-bold font-sora flex py-20 md:py-32 flex-col-reverse  md:grid md:grid-cols-2 p-10 '>
-
-                <div className='my-auto md:pl-10 '>
-                    <p className='md:text-6xl md:w-[120%] text-2xl'>
-                        UNLOCK SCALABLE GROWTH BY THE POWER OF DATA ANALYTICS
-                    </p>
-                    <p className='my-10 md:text-xl w-[80%] '>
-                        Harness huge growth opportunities and competitive advantages in a smart way.
-                    </p>
-                    <button className='bg-white border-2 border-[#0D2CDC]  font-pop p-4  font-extrabold bg-opacity-10 rounded-3xl'>
-                        Book a Demo
-                    </button>
-                </div>
-                <div className=' mx-auto'>
-                    <img src="./images/robot.png" alt="" className='aspect-square' />
-                </div>
-            </div >
-
+        <div className='bg-gradient'>
+            <Sidebar link="service" />
             {/* {OUR SERVICES} */}
             <div className='text-white'>
-                <h1 className='font-sora  text-center font-extrabold text-5xl my-12'>
+                <h1 className='font-sora  text-center font-extrabold text-5xl py-12'>
                     OUR SERVICES
                 </h1>
-                <div className='md:grid md:grid-cols-3 space-y-4 md:space-y-0 md:gap-4  p-6 text-white '>
+                <div className='lg:grid lg:grid-cols-2 md:w-3/4 justify-center mx-auto space-y-4 md:space-y-0 md:gap-4  p-6 text-white '>
                     <div className='  bg-black p-4 rounded-xl grad-border'>
                         <div className='w-full'>
                             <img src="./images/img1.svg" alt="" className='w-full' />
@@ -54,8 +37,7 @@ export const Home = () => {
                         </ul>
                         <div className='mx-auto text-center my-10'>
                             <button className='bg-white border-2 border-[#0D2CDC]  font-pop p-4  font-extrabold bg-opacity-10 rounded-3xl'>
-                                <Link to={`/vulgarity-protection`}>Learn More</Link>
-
+                                <Link to={`/service/platform-cleansing`}>Learn More</Link>
                             </button>
                         </div>
 
@@ -97,13 +79,13 @@ export const Home = () => {
                         </ul>
                         <div className='mx-auto text-center my-10'>
                             <button className='bg-white border-2 border-[#0D2CDC]  font-pop p-4  font-extrabold bg-opacity-10 rounded-3xl'>
-                                <Link to={`/service/sentiment-analysis`}>Learn More</Link>
-
+                                <Link to={`/service/vulgarity-protection`}>Learn More</Link>
                             </button>
                         </div>
 
                     </div>
-                    <div className='bg-opacity-10 bg-black p-4 rounded-xl grad-border'>
+
+                    <div className='self-end  bg-opacity-10 bg-black p-4 rounded-xl grad-border'>
                         <div className='w-full'>
                             <img src="./images/img3.svg" alt="" className='w-full' />
                         </div>
@@ -127,8 +109,7 @@ export const Home = () => {
                         </ul>
                         <div className='mx-auto text-center my-10'>
                             <button className='bg-white border-2 border-[#0D2CDC]  font-pop p-4  font-extrabold bg-opacity-10 rounded-3xl'>
-                                <Link to={`/service/platform-cleansing`}>Learn More</Link>
-
+                                <Link to={`/service/sentiment-analysis`}>Learn More</Link>
                             </button>
                         </div>
 
@@ -138,8 +119,8 @@ export const Home = () => {
                 </div>
             </div>
 
-
-
-        </div >
+        </div>
     )
 }
+
+export default Service

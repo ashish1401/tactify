@@ -13,7 +13,7 @@ const Navbar = () => {
                         <Link to="/">Home</Link>
                     </li>
                     <li className='my-auto'>
-                        <Link to="/about">About</Link>
+                        <Link to="/profile">Profile</Link>
                     </li>
 
                     <li className='my-auto flex  gap-2 font-bold text-3xl'>
@@ -29,7 +29,7 @@ const Navbar = () => {
                         <Link to="/dashboard">Dashboard</Link>
                     </li>
                     <li className='my-auto'>
-                        <Link to="/services">Services</Link>
+                        <Link to="/service">Services</Link>
                     </li>
                 </ul>
 
