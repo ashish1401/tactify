@@ -15,7 +15,7 @@ export const Dashboard = () => {
                         Shh! Data Ahead!
                     </p>
                     <button className='bg-white rounded-xl w-1/2 mx-auto p-4'>
-                        <Link to="/dashboard/sentiment-analysis">Unleash your Now!</Link>
+                        <Link to="/dashboard/sentiment-analysis">Unleash your Organisation Now!</Link>
                     </button>
                 </div>
             </div>
